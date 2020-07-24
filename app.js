@@ -57,11 +57,6 @@ function editItem(e) {
   var val = e.parentNode.firstChild.innerText;
   var editValue = prompt("Enter edit value", val)
 
-  if (todoInput.value == "") {
-    alert("Input can not be empty!")
-    editValue = prompt("Enter edit value", val)
-  }
-
   e.parentNode.firstChild.innerHTML = editValue
 }
 
@@ -85,7 +80,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 /* Otherwise just put the config content (json): */
 
 particlesJS('snow_fall',
-  
+
   {
     "particles": {
       "number": {
