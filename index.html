@@ -10,6 +10,30 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
     <title>Todo Application</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCshepJMrUZ0f0Zw094ge-G1c7UkyK9Y20",
+            authDomain: "to-do-js-application.firebaseapp.com",
+            databaseURL: "https://to-do-js-application.firebaseio.com",
+            projectId: "to-do-js-application",
+            storageBucket: "to-do-js-application.appspot.com",
+            messagingSenderId: "153804695157",
+            appId: "1:153804695157:web:34e7a0afd17601fa537a3c",
+            measurementId: "G-09BFCQ6VL2"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
 </head>
 
 <body>
